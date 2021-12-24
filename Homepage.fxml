@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomepageController">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="412.0" fitWidth="581.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/Software/images/unnamed.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="164.0" layoutY="56.0" prefHeight="105.0" prefWidth="283.0" text="7agazt?" textFill="WHITE">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="footballButton" layoutX="157.0" layoutY="174.0" mnemonicParsing="false" text="Football" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="21.0" layoutY="176.0" text="choose sport:" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="basketballButton" layoutX="275.0" layoutY="174.0" mnemonicParsing="false" text="Basketball" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="tennisButton" layoutX="431.0" layoutY="174.0" mnemonicParsing="false" text="Tennis" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="heliopolisButton" layoutX="155.0" layoutY="265.0" mnemonicParsing="false" text="Heliopolis" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="21.0" layoutY="263.0" text="choose location:" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="nasrCityButton" layoutX="278.0" layoutY="265.0" mnemonicParsing="false" text="Nasr City" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="submitChoicesButton" layoutX="431.0" layoutY="334.0" mnemonicParsing="false" onAction="#choose" text="Submit Choices" />
+      <Label fx:id="chooseMessage" alignment="CENTER" layoutX="95.0" layoutY="47.0" prefHeight="18.0" prefWidth="361.0" />
+      <Label fx:id="chooseeMessage" layoutX="186.0" layoutY="294.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="fifthDistrictButton" layoutX="431.0" layoutY="265.0" mnemonicParsing="false" text="5th District" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="21.0" layoutY="322.0" text="Choose Date:" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="monthTextField" alignment="CENTER" layoutX="212.0" layoutY="322.0" prefHeight="25.0" prefWidth="40.0" promptText="MM" />
+      <TextField fx:id="yearTextField" alignment="CENTER" layoutX="265.0" layoutY="322.0" prefHeight="25.0" prefWidth="40.0" promptText="YY" />
+      <TextField fx:id="dayTextField" layoutX="157.0" layoutY="322.0" prefHeight="25.0" prefWidth="40.0" promptText="DD" />
+   </children>
+</Pane>

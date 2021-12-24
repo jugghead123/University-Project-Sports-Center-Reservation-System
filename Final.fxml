@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FinalController">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="418.0" fitWidth="585.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/Software/images/unnamed.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="171.0" layoutY="64.0" text="7agazt?" textFill="WHITE">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="352.0" text="Thank you for using our app" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="269.0" layoutY="372.0" text="7agazt?" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="215.0" text="Your Reservation is done successfully" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

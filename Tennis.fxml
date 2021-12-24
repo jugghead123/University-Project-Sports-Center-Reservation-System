@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TennisController">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="426.0" fitWidth="585.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/Software/images/Capture3.PNG" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="smashButton" layoutX="120.0" layoutY="270.0" mnemonicParsing="false" text="Smash" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="skyButton" layoutX="383.0" layoutY="270.0" mnemonicParsing="false" text="Sky" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="71.0" layoutY="319.0" text="From" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="176.0" layoutY="319.0" text="To" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timeoneTextField" layoutX="120.0" layoutY="319.0" prefHeight="25.0" prefWidth="37.0" />
+      <TextField fx:id="timetwoTextField" layoutX="212.0" layoutY="319.0" prefHeight="25.0" prefWidth="37.0" />
+      <Button fx:id="payButton" layoutX="392.0" layoutY="319.0" mnemonicParsing="false" onAction="#chooseCourt" text="Pay" />
+      <Label layoutX="71.0" layoutY="193.0" text="150LE/Hr" />
+      <Label layoutX="318.0" layoutY="193.0" text="180LE/Hr" />
+      <Label fx:id="courtMessage" alignment="CENTER" layoutX="35.0" layoutY="358.0" prefHeight="17.0" prefWidth="513.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

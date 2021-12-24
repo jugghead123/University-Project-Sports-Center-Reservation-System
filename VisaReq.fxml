@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.VisaReqController">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="411.0" fitWidth="578.0" layoutX="-6.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/Software/images/unnamed.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="161.0" layoutY="58.0" text="7agazt?" textFill="WHITE">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="163.0" text="Account number:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="223.0" text="CVV:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="286.0" text="Expiration Date:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accountNumberTextField" layoutX="305.0" layoutY="164.0" promptText="Account number" />
+      <TextField fx:id="cvvTextField" layoutX="305.0" layoutY="224.0" prefHeight="25.0" prefWidth="45.0" promptText="CVV" />
+      <Button fx:id="confirmButton" layoutX="217.0" layoutY="339.0" mnemonicParsing="false" onAction="#visaButtonOnAction" prefHeight="25.0" prefWidth="136.0" text="Confirm" />
+      <Label fx:id="visaMessageLabel" alignment="CENTER" layoutX="135.0" layoutY="322.0" prefHeight="17.0" prefWidth="301.0" textFill="WHITE" />
+      <TextField fx:id="monthTextField" layoutX="305.0" layoutY="287.0" prefHeight="25.0" prefWidth="37.0" promptText="MM" />
+      <TextField fx:id="yearTextField" layoutX="361.0" layoutY="287.0" prefHeight="25.0" prefWidth="37.0" promptText="YY" />
+   </children>
+</Pane>
